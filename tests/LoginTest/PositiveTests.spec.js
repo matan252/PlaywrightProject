@@ -13,7 +13,7 @@ test.describe("Positive Login Tests Suite", () => {
     await expect(page).toHaveURL("https://www.saucedemo.com/inventory.html");
     await expect(page.getByText("Products")).toBeVisible();
   });
-  r;
+
   test("log in as problem_user", async ({ page }) => {
     await page.locator('[data-test="username"]').fill("problem_user");
     await page.locator('[data-test="password"]').fill("secret_sauce");
